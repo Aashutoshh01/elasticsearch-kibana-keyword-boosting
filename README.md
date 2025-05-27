@@ -36,3 +36,30 @@ Elasticsearch: http://localhost:9200
 Kibana: http://localhost:5601
 
 ## 📊 Step 2: Index the Catalog in Elasticsearch
+```bash
+curl -X PUT "localhost:9200/apnamart_catalog" \
+-H 'Content-Type: application/json' \
+-d @catalog_mapping.json
+
+curl -X POST "localhost:9200/_bulk" \
+-H 'Content-Type: application/json' \
+--data-binary @bulk_catalog.json
+```
+
+## 🧠 Step 3: Generate Boosting Weights
+Run the Python script to analyze search logs and compute brand/product_type boost weights:
+```bash
+python3 calculate_boosts.py > boost_map.json
+```
+Sample output:
+```bash
+{
+  "milk": {
+    "brands": {"Amul": 1.0, "Sudha": 0.5},
+    "product_types": {"Milk": 1.0, "Curd": 0.75}
+  }
+}
+```
+
+
+
