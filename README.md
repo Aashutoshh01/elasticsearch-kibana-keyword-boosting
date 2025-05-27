@@ -13,6 +13,23 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 
 ---
 
+##🔄 General Workflow (What Happens Step-by-Step)
+- Start Elasticsearch and Kibana with Docker
+
+- Define a catalog schema (mapping) for product fields: name, brand, product_type, etc.
+
+- Index the catalog with example data.
+
+- Simulate user clicks or search interest using search_logs.json.
+
+- Calculate boosting weights using Python, based on user logs.
+
+- Run a function_score query where boosts are applied to brand/product types.
+
+- View results ranked by computed boost score.
+
+- (Optional) Use Kibana to visualize results.
+
 ## 📦 Project Structure
 
 ```bash
