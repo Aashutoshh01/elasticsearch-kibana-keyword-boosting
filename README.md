@@ -151,6 +151,10 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 - Go to Dashboard > Create
 - Add all visualizations
 - Save as: Search Behavior and Boosting Insights
+
+## 🖼️ Visuals
+### 📌 Kibana Dashboard
+![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
   
 ## 📜 License
 Open-source for learning purposes. Use and modify freely.
