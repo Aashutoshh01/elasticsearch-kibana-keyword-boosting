@@ -135,7 +135,7 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 - Go to Stack Management > Index Patterns
 - Create patterns for:
   - apnamart_catalog
-  - 
+  
 **🔹 Create Visualizations**
 - Top Search Queries
   - Visualization: Bar chart
@@ -150,7 +150,7 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
   - Visualization: Horizontal bar chart
   - Data: apnamart_catalog
   - X-axis: Terms on product_type
-  - 
+    
 **🔹 Create Dashboard**
 - Go to Dashboard > Create
 - Add all visualizations
