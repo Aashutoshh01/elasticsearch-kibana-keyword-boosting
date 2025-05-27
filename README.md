@@ -25,7 +25,3 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 ├── calculate_boosts.py           # Python script to compute boosting weights
 ├── boost_map.json                # Output of boosting weights
 └── README.md
-🐳 Step 1: Run Elasticsearch + Kibana Using Docker
-
-```bash
-docker-compose up -d
