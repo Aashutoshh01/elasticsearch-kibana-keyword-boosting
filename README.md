@@ -26,7 +26,7 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 ├── boost_map.json                # Output of boosting weights
 └── README.md
 ```
-🐳 Step 1: Run Elasticsearch + Kibana Using Docker
+## 🐳 Step 1: Run Elasticsearch + Kibana Using Docker
 
 ```bash
 docker-compose up -d
@@ -34,4 +34,5 @@ docker-compose up -d
 Elasticsearch: http://localhost:9200
 
 Kibana: http://localhost:5601
-📊 Step 2: Index the Catalog in Elasticsearch
+
+## 📊 Step 2: Index the Catalog in Elasticsearch
