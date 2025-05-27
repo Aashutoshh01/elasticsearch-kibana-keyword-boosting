@@ -1,0 +1,12 @@
+[
+  {"query": "milk", "clicked_product_id": 1},
+  {"query": "milk", "clicked_product_id": 2},
+  {"query": "milk", "clicked_product_id": 3},
+  {"query": "tea", "clicked_product_id": 4},
+  {"query": "tea", "clicked_product_id": 5},
+  {"query": "bread", "clicked_product_id": 6},
+  {"query": "biscuits", "clicked_product_id": 7},
+  {"query": "curd", "clicked_product_id": 2},
+  {"query": "milk", "clicked_product_id": 1},
+  {"query": "milk", "clicked_product_id": 1}
+]

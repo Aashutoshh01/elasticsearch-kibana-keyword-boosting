@@ -1,0 +1,46 @@
+{
+  "milk": {
+    "brands": {
+      "Amul": 1.0,
+      "Sudha": 0.25
+    },
+    "product_types": {
+      "Milk": 1.0,
+      "Curd": 0.3333333333333333,
+      "Paneer": 0.3333333333333333
+    }
+  },
+  "tea": {
+    "brands": {
+      "Tata": 1.0,
+      "Red Label": 1.0
+    },
+    "product_types": {
+      "Tea": 1.0
+    }
+  },
+  "bread": {
+    "brands": {
+      "Britannia": 1.0
+    },
+    "product_types": {
+      "Bread": 1.0
+    }
+  },
+  "biscuits": {
+    "brands": {
+      "Parle": 1.0
+    },
+    "product_types": {
+      "Biscuits": 1.0
+    }
+  },
+  "curd": {
+    "brands": {
+      "Sudha": 1.0
+    },
+    "product_types": {
+      "Curd": 1.0
+    }
+  }
+}
