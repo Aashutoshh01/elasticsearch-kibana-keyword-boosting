@@ -153,7 +153,21 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 - Save as: Search Behavior and Boosting Insights
 
 ## 🖼️ Visuals
+### 📌 Output Overview
+![Kibana Dashboard](Miscellaneous/Output.png)
+### 📌 Kibana Overview
+![Kibana Dashboard](Miscellaneous/Kibana-Overview.png)
 ### 📌 Kibana Dashboard
+![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
+### 📌 Documents Discover
+![Kibana Dashboard](Miscellaneous/Documents-Discover.png)
+### 📌 Pie Chart (product_type)
+![Kibana Dashboard](Miscellaneous/Kibana.png)
+### 📌 Bar Graph (product_type)
+![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
+### 📌 Pie Chart (brand)
+![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
+### 📌 Bar Graph (category)
 ![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
   
 ## 📜 License
