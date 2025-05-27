@@ -153,22 +153,22 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 - Save as: Search Behavior and Boosting Insights
 
 ## 🖼️ Visuals
-### 📌 Output Overview
+### 1️⃣ Output Overview
 ![Kibana Dashboard](Miscellaneous/Output.png)
-### 📌 Kibana Overview
-![Kibana Dashboard](Miscellaneous/Kibana-Overview.png)
-### 📌 Kibana Dashboard
-![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
-### 📌 Documents Discover
-![Kibana Dashboard](Miscellaneous/Documents-Discover.png)
-### 📌 Pie Chart (product_type)
-![Kibana Dashboard](Miscellaneous/Pie%20Chart%20(product%20type).png)
-### 📌 Bar Graph (product_type)
-![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
-### 📌 Pie Chart (brand)
-![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
-### 📌 Bar Graph (category)
-![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
+### 2️⃣ Kibana Overview
+![Kibana Dashboard](Miscellaneous/Kibana_Overview.png)
+### 3️⃣ Kibana Dashboard
+![Kibana Dashboard](Miscellaneous/Kibana_Dashboard.png)
+### 4️⃣ Documents Discover
+![Kibana Dashboard](Miscellaneous/Documents_Discover.png)
+### 5️⃣ Pie Chart (product_type)
+![Kibana Dashboard](Miscellaneous/Pie_Chart_(product_type).png)
+### 6️⃣ Bar Graph (product_type)
+![Kibana Dashboard](Miscellaneous/Bar_Graph_(product_type).png)
+### 7️⃣ Pie Chart (brand)
+![Kibana Dashboard](Miscellaneous/Pie_Chart_(brand).png)
+### 8️⃣ Bar Graph (category)
+![Kibana Dashboard](Miscellaneous/Bar_Graph_(category).png)
   
 ## 📜 License
 Open-source for learning purposes. Use and modify freely.
