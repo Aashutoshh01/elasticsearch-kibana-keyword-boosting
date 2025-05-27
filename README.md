@@ -31,3 +31,7 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 ```bash
 docker-compose up -d
 ```
+Elasticsearch: http://localhost:9200
+
+Kibana: http://localhost:5601
+📊 Step 2: Index the Catalog in Elasticsearch
