@@ -15,19 +15,12 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 
 ## 🔄 General Workflow (What Happens Step-by-Step)
 - Start Elasticsearch and Kibana with Docker
-
 - Define a catalog schema (mapping) for product fields: name, brand, product_type, etc.
-
 - Index the catalog with example data.
-
 - Simulate user clicks or search interest using search_logs.json.
-
 - Calculate boosting weights using Python, based on user logs.
-
 - Run a function_score query where boosts are applied to brand/product types.
-
 - View results ranked by computed boost score.
-
 - (Optional) Use Kibana to visualize results.
 
 ## 📦 Project Structure
@@ -49,10 +42,12 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 docker-compose up -d
 ```
 Elasticsearch: http://localhost:9200
-
 Kibana: http://localhost:5601
-
-## 📊 Step 2: Index the Catalog in Elasticsearch
+## 🔐 Step 2: Verify Elasticsearch Running (Optional)
+```bash
+curl -u elastic:##password## --insecure https://localhost:9200
+```
+## 📊 Step 3: Index the Catalog in Elasticsearch
 ```bash
 curl -X PUT "localhost:9200/apnamart_catalog" \
 -H 'Content-Type: application/json' \
@@ -100,6 +95,37 @@ curl -X POST "localhost:9200/apnamart_catalog/_search" \
   }
 }'
 ```
+This makes “Amul Milk” rank higher than other “milk” products.
+
+## ✅ Output Sample (Boosted Result)
+```bash
+{
+  "hits": {
+    "total": { "value": 1 },
+    "max_score": 7.7440968,
+    "hits": [
+      {
+        "_source": {
+          "id": 1,
+          "name": "Amul Milk",
+          "brand": "Amul",
+          "product_type": "Milk",
+          "category": "Dairy"
+        },
+        "_score": 7.7440968
+      }
+    ]
+  }
+}
+
+```
+This shows that Amul Milk had the highest score after applying the function_score.
+
+## 📦 Optional: View Index Metadata
+```bash
+curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_catalog"
+```
+
 ## 📈 Step 5: Visualize Insights in Kibana
 **🔹 Setup Index Patterns**
 - Open Kibana at http://localhost:5601
