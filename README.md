@@ -85,9 +85,9 @@ curl -X POST "localhost:9200/apnamart_catalog/_search" \
 ```
 ## 📈 Step 5: Visualize Insights in Kibana
 🔹 Setup Index Patterns
--Open Kibana at http://localhost:5601
+- Open Kibana at http://localhost:5601
 
--Go to Stack Management > Index Patterns
+- Go to Stack Management > Index Patterns
 
 Create patterns for:
 
