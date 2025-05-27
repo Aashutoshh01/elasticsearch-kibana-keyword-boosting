@@ -13,7 +13,7 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 
 ---
 
-##🔄 General Workflow (What Happens Step-by-Step)
+## 🔄 General Workflow (What Happens Step-by-Step)
 - Start Elasticsearch and Kibana with Docker
 
 - Define a catalog schema (mapping) for product fields: name, brand, product_type, etc.
