@@ -84,5 +84,18 @@ curl -X POST "localhost:9200/apnamart_catalog/_search" \
 }'
 ```
 ## 📈 Step 5: Visualize Insights in Kibana
-**🔹 Setup Index Patterns
+🔹 Setup Index Patterns
+## 📜 License
+Open-source for learning purposes. Use and modify freely.
+
+---
+
+Let me know if you'd like me to:
+
+- Write the `calculate_boosts.py` output into ES as a new index for Kibana visualizations
+- Package this into a Jupyter notebook for better demo
+- Help you write a small presentation slide from this
+
+You're now GitHub + Elasticsearch + Kibana ready 🎯
+```
 
