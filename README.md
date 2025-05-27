@@ -4,13 +4,11 @@
 This project demonstrates how to use **Elasticsearch** and **Kibana** to build a relevance boosting system based on **user search behavior** for a product catalog.
 
 ## 🚀 Project Overview
-
 - Simulate a search catalog (products, brands, categories)
 - Generate synthetic user search logs
 - Analyze clicked data to compute boosting scores
 - Apply boosting to search results using Elasticsearch's `function_score`
 - Visualize catalog, query patterns, and impact in Kibana
-
 ---
 
 ## 🔄 General Workflow (What Happens Step-by-Step)
@@ -24,7 +22,6 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 - (Optional) Use Kibana to visualize results.
 
 ## 📦 Project Structure
-
 ```bash
 .
 ├── docker-compose.yml            # Elasticsearch + Kibana setup
@@ -36,6 +33,7 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 ├── boost_map.json                # Output of boosting weights
 └── README.md
 ```
+
 ## 🐳 Step 1: Run Elasticsearch + Kibana Using Docker
 
 ```bash
@@ -43,10 +41,12 @@ docker-compose up -d
 ```
 Elasticsearch: http://localhost:9200
 Kibana: http://localhost:5601
+
 ## 🔐 Step 2: Verify Elasticsearch Running (Optional)
 ```bash
 curl -u elastic:##password## --insecure https://localhost:9200
 ```
+
 ## 📊 Step 3: Index the Catalog in Elasticsearch
 ```bash
 curl -X PUT "localhost:9200/apnamart_catalog" \
@@ -58,7 +58,7 @@ curl -X POST "localhost:9200/_bulk" \
 --data-binary @bulk_catalog.json
 ```
 
-## 🧠 Step 3: Generate Boosting Weights
+## 🧠 Step 4: Generate Boosting Weights
 Run the Python script to analyze search logs and compute brand/product_type boost weights:
 ```bash
 python3 calculate_boosts.py > boost_map.json
@@ -72,7 +72,8 @@ Sample output:
   }
 }
 ```
-## 🔎 Step 4: Perform Boosted Search
+
+## 🔎 Step 5: Perform Boosted Search
 Example search query for "milk" using boosting:
 ```bash
 curl -X POST "localhost:9200/apnamart_catalog/_search" \
@@ -121,53 +122,34 @@ This makes “Amul Milk” rank higher than other “milk” products.
 ```
 This shows that Amul Milk had the highest score after applying the function_score.
 
-## 📦 Optional: View Index Metadata
+## 📦 Step 6 (Optional): View Index Metadata
 ```bash
 curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_catalog"
 ```
 
-## 📈 Step 5: Visualize Insights in Kibana
+## 📈 Step 7: Visualize Insights in Kibana
 **🔹 Setup Index Patterns**
 - Open Kibana at http://localhost:5601
-
 - Go to Stack Management > Index Patterns
-
 - Create patterns for:
-
   - apnamart_catalog
-
 **🔹 Create Visualizations**
 - Top Search Queries
-
   - Visualization: Bar chart
-
   - Data: search_logs
-
   - X-axis: Terms on query
-
   - Y-axis: Count
-
 - Top Clicked Brands
-
   - Visualization: Pie chart
-
   - Data: search_logs
-
   - Field: clicked_product_id (join manually or use scripted field)
-
 - Product Type Distribution
-
   - Visualization: Horizontal bar chart
-
   - Data: apnamart_catalog
-
   - X-axis: Terms on product_type
-
 **🔹 Create Dashboard**
 - Go to Dashboard > Create
-
 - Add all visualizations
-
 - Save as: Search Behavior and Boosting Insights
   
 ## 📜 License
@@ -183,4 +165,3 @@ Let me know if you'd like me to:
 
 You're now GitHub + Elasticsearch + Kibana ready 🎯
 ```
-
