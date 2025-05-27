@@ -153,7 +153,7 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 - Save as: Search Behavior and Boosting Insights
 
 ## 🖼️ Visuals
-### 1️⃣ Output Overview
+### **1️⃣ Output Overview**
 ![Kibana Dashboard](Miscellaneous/Output.png)
 ### 2️⃣ Kibana Overview
 ![Kibana Dashboard](Miscellaneous/Kibana_Overview.png)
