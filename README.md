@@ -84,50 +84,49 @@ curl -X POST "localhost:9200/apnamart_catalog/_search" \
 }'
 ```
 ## 📈 Step 5: Visualize Insights in Kibana
-🔹 Setup Index Patterns
+**🔹 Setup Index Patterns**
 - Open Kibana at http://localhost:5601
 
 - Go to Stack Management > Index Patterns
 
-Create patterns for:
+- Create patterns for:
 
-apnamart_catalog
+  - apnamart_catalog
 
-search_logs (optional: if logs are indexed)
+**🔹 Create Visualizations**
+- Top Search Queries
 
-🔹 Create Visualizations
-Top Search Queries
+  - Visualization: Bar chart
 
-Visualization: Bar chart
+  - Data: search_logs
 
-Data: search_logs
+  - X-axis: Terms on query
 
-X-axis: Terms on query
+  - Y-axis: Count
 
-Y-axis: Count
+- Top Clicked Brands
 
-Top Clicked Brands
+  - Visualization: Pie chart
 
-Visualization: Pie chart
+  - Data: search_logs
 
-Data: search_logs
+  - Field: clicked_product_id (join manually or use scripted field)
 
-Field: clicked_product_id (join manually or use scripted field)
+- Product Type Distribution
 
-Product Type Distribution
+  - Visualization: Horizontal bar chart
 
-Visualization: Horizontal bar chart
+  - Data: apnamart_catalog
 
-Data: apnamart_catalog
+  - X-axis: Terms on product_type
 
-X-axis: Terms on product_type
+**🔹 Create Dashboard**
+- Go to Dashboard > Create
 
-🔹 Create Dashboard
-Go to Dashboard > Create
+- Add all visualizations
 
-Add all visualizations
-
-Save as: Search Behavior and Boosting Insights
+- Save as: Search Behavior and Boosting Insights
+  
 ## 📜 License
 Open-source for learning purposes. Use and modify freely.
 
