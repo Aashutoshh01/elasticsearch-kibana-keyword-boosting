@@ -40,6 +40,7 @@ This project demonstrates how to use **Elasticsearch** and **Kibana** to build a
 docker-compose up -d
 ```
 Elasticsearch: http://localhost:9200
+
 Kibana: http://localhost:5601
 
 ## 🔐 Step 2: Verify Elasticsearch Running (Optional)
