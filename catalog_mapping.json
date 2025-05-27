@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {"type": "integer"},
+      "name": {"type": "text"},
+      "brand": {"type": "keyword"},
+      "product_type": {"type": "keyword"},
+      "category": {"type": "keyword"}
+    }
+  }
+}

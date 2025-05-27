@@ -1,0 +1,14 @@
+{ "index": { "_index": "apnamart_catalog", "_id": 1 } }
+{ "id": 1, "name": "Amul Milk", "brand": "Amul", "product_type": "Milk", "category": "Dairy" }
+{ "index": { "_index": "apnamart_catalog", "_id": 2 } }
+{ "id": 2, "name": "Sudha Curd", "brand": "Sudha", "product_type": "Curd", "category": "Dairy" }
+{ "index": { "_index": "apnamart_catalog", "_id": 3 } }
+{ "id": 3, "name": "Amul Paneer", "brand": "Amul", "product_type": "Paneer", "category": "Dairy" }
+{ "index": { "_index": "apnamart_catalog", "_id": 4 } }
+{ "id": 4, "name": "Tata Tea", "brand": "Tata", "product_type": "Tea", "category": "Beverages" }
+{ "index": { "_index": "apnamart_catalog", "_id": 5 } }
+{ "id": 5, "name": "Red Label Tea", "brand": "Red Label", "product_type": "Tea", "category": "Beverages" }
+{ "index": { "_index": "apnamart_catalog", "_id": 6 } }
+{ "id": 6, "name": "Britannia Bread", "brand": "Britannia", "product_type": "Bread", "category": "Bakery" }
+{ "index": { "_index": "apnamart_catalog", "_id": 7 } }
+{ "id": 7, "name": "Parle Biscuits", "brand": "Parle", "product_type": "Biscuits", "category": "Snacks" }
