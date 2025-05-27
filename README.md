@@ -60,6 +60,29 @@ Sample output:
   }
 }
 ```
-
-
+## 🔎 Step 4: Perform Boosted Search
+Example search query for "milk" using boosting:
+```bash
+curl -X POST "localhost:9200/apnamart_catalog/_search" \
+-H 'Content-Type: application/json' -d'
+{
+  "query": {
+    "function_score": {
+      "query": {
+        "match": { "name": "milk" }
+      },
+      "functions": [
+        { "filter": { "term": { "brand": "Amul" }}, "weight": 2.0 },
+        { "filter": { "term": { "brand": "Sudha" }}, "weight": 1.0 },
+        { "filter": { "term": { "product_type": "Milk" }}, "weight": 2.5 },
+        { "filter": { "term": { "product_type": "Curd" }}, "weight": 1.8 }
+      ],
+      "score_mode": "sum",
+      "boost_mode": "multiply"
+    }
+  }
+}'
+```
+## 📈 Step 5: Visualize Insights in Kibana
+**🔹 Setup Index Patterns
 
