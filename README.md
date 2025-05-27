@@ -162,7 +162,7 @@ curl -u elastic:##password## --insecure -X GET "https://localhost:9200/apnamart_
 ### 📌 Documents Discover
 ![Kibana Dashboard](Miscellaneous/Documents-Discover.png)
 ### 📌 Pie Chart (product_type)
-![Kibana Dashboard](Miscellaneous/Kibana.png)
+![Kibana Dashboard](Miscellaneous/Pie Chart (product_type).png)
 ### 📌 Bar Graph (product_type)
 ![Kibana Dashboard](Miscellaneous/Kibana-Dashboard.png)
 ### 📌 Pie Chart (brand)
